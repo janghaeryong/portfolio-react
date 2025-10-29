@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans:
+    'Pretendard', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --font-poppins: 'Poppins', var(--font-sans);
+}
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+@layer utilities {
+  /* 하얀 외곽선 */
+  .stroke-outline-white {
+    -webkit-text-stroke: 1.4px #fff;
+  }
+}
+@layer base {
+  html,
+  body,
+  #root {
+    @apply min-h-dvh;
+  }
+  /* 앱 셸에 id/class를 하나 주고 최소 너비를 거세요 */
+  #app-shell {
+    @apply min-w-[360px];
+  }
+}
