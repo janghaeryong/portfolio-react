@@ -1,12 +1,11 @@
 import { Header, Footer } from '@/shared/ui/navigation';
 
-import { Outlet } from 'react-router-dom';
-export default function AppLayout() {
+export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
     <div id="app-shell">
       <Header />
       <main className="bg-white">
-        <Outlet />
+        {children}
       </main>
       <Footer />
     </div>

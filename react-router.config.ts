@@ -2,6 +2,6 @@ import type { Config } from "@react-router/dev/config";
 
 export default {
   // Config options...
-  // Server-side render by default, to enable SPA mode set this to `false`
-  ssr: true,
+  // GitHub Pages는 정적 호스팅만 지원하므로 SPA 모드 사용
+  ssr: false,
 } satisfies Config;
