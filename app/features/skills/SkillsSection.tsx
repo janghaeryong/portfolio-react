@@ -35,9 +35,11 @@ export default function SkillsSection() {
   return (
     <section
       id="skills"
-      className="py-16 sm:py-24 scroll-mt-15 md:scroll-mt-20"
+      // ❌ scroll-mt-15 -> ✅ scroll-mt-16 (헤더 높이가 64px 근처라 가정)
+      // 색을 확실히 지정해 부모 상속 이슈 방지
+      className="py-16 sm:py-24 scroll-mt-16 md:scroll-mt-20 text-neutral-900"
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto max-w-6xl px-4">
         <header className="mb-10">
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
             SKILLS
@@ -81,6 +83,7 @@ function SkillColumn({ title, items }: { title: string; items: Skill[] }) {
       <ul className="space-y-3" role="list">
         {items.map((s) => (
           <li key={s.name} className="flex items-start gap-3">
+            {/* size-2는 v3 이상 필요. 이슈 시 w-2 h-2로 교체 */}
             <span className="mt-1 inline-block size-2 rounded-full bg-black/60" />
             <div>
               <div className="font-medium">{s.name}</div>
