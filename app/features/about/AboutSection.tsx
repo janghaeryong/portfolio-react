@@ -6,7 +6,7 @@ export default function AboutSection() {
       id="about"
       className="
         relative w-full min-h-screen
-        bg-gradient-to-br from-[#0b1020] via-[#0c1222] to-[#0e1626]
+        bg-gradient-to-b from-[#0b1020] via-[#0c1222] to-[#0e1626]
         text-white
         flex items-center
       "

@@ -18,7 +18,7 @@ type ModalProps = {
   children: React.ReactNode;
 };
 
-export function Modal({ open, onClose, title, children }: ModalProps) {
+export default function Modal({ open, onClose, title, children }: ModalProps) {
   const rootRef = useRef<HTMLDivElement>(null);
   useLockBodyScroll(open);
 

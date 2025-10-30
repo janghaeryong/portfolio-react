@@ -1,5 +1,5 @@
-import Header from '../shared/ui/header';
-import Footer from '../shared/ui/footer';
+import { Header, Footer } from '@/shared/ui/navigation';
+
 import { Outlet } from 'react-router-dom';
 export default function AppLayout() {
   return (

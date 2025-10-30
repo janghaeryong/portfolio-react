@@ -1,0 +1,54 @@
+name: Deploy to GitHub Pages (React Router + Vite)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 프로젝트 의존성 설치
+      - run: npm ci
+
+      # React Router 빌드 (client/server 동시 생성)
+      - run: npm run build
+
+      # Pages(SPA) 새로고침 404 방지: index.html을 404.html로 복사
+      - run: |
+          mkdir -p build/client
+          if [ -f build/client/index.html ]; then cp build/client/index.html build/client/404.html; fi
+
+      # Jekyll 무시 규칙 해제 (언더스코어 파일들 안전하게 서빙)
+      - run: touch build/client/.nojekyll
+
+      # 결과물 업로드 (GitHub Pages가 이 아티팩트를 배포)
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/client
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

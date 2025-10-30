@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Modal } from '../../components/Modal';
+import { Modal } from '@/shared/ui/overlay';
 import ProjectsModalContent from '../../features/projects/ProjectsModalContent';
 export default function ProjectsSection() {
   const [isModalOpen, setModalOpen] = useState(false);

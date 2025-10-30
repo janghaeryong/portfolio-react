@@ -1,7 +1,9 @@
-import AboutSection from '~/features/about/AboutSection';
-
-import SkillsSection from '~/features/skills/SkillsSection';
-import ProjectsSection from '~/features/projects/ProjectsSection';
+import {
+  HeroSection,
+  AboutSection,
+  SkillsSection,
+  ProjectsSection,
+} from '~/features';
 
 export function meta() {
   return [
@@ -13,6 +15,7 @@ export function meta() {
 export default function HomePage() {
   return (
     <div className="flex flex-col">
+      <HeroSection />
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />
