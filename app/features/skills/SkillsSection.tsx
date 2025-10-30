@@ -33,16 +33,15 @@ const ARCHITECTURE: string[] = [
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="py-16 sm:py-24">
+    <section
+      id="skills"
+      className="py-16 sm:py-24 scroll-mt-15 md:scroll-mt-20"
+    >
       <div className="container mx-auto px-4">
         <header className="mb-10">
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
             SKILLS
           </h2>
-          <p className="mt-2 text-sm text-neutral-500">
-            모바일 개발(Android · iOS · Flutter) 중심 · 실전 사용 가능 기술만
-            정리
-          </p>
         </header>
 
         {/* 3열 그리드: Familiar / Tried / Language */}

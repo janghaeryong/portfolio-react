@@ -22,13 +22,15 @@ export default function Header() {
       <header
         className={`fixed left-0 right-0 top-0 z-50 transition-colors duration-100 ${
           isScrolled
-            ? 'text-black bg-white shadow-gray-300/40'
+            ? 'text-black bg-white shadow-md'
             : 'text-white bg-transparent'
         }`}
       >
-        <nav className="container max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+        <nav className="container max-w-6xl mx-auto px-6 h-15 md:h-20 flex justify-between items-center">
           <div className="flex items-center gap-4">
-            <h1 className="text-2xl font-bold">JHR Portfolio</h1>
+            <a href="#hero">
+              <h1 className="text-2xl font-bold">JHR Portfolio</h1>
+            </a>
           </div>
 
           {/* 데스크톱 네비 */}
@@ -46,7 +48,6 @@ export default function Header() {
               Projects
             </a>
           </div>
-
           {/* 모바일 메뉴 버튼 */}
           <button
             type="button"
@@ -104,7 +105,7 @@ export default function Header() {
             Skills
           </a>
           <a
-            href="#project"
+            href="#projects"
             className="hover:text-blue-500 transition-colors"
             onClick={handleNavClick}
           >
