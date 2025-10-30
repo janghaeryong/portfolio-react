@@ -7,7 +7,8 @@ import {
   ScrollRestoration,
 } from 'react-router';
 
-import AppLayout from './layouts/app_layout';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 import type { Route } from './+types/root';
 import './app.css';
@@ -46,12 +47,18 @@ export function Layout({ children }: { children: React.ReactNode }) {
     </html>
   );
 }
+const queryClient = new QueryClient();
 
 export default function App() {
   return (
-    <AppLayout>
+    <QueryClientProvider client={queryClient}>
       <Outlet />
-    </AppLayout>
+      {/* 개발 편의를 위한 DevTools */}
+      {/* 개발 & 브라우저에서만 표시 (SSR 가드) */}
+      {import.meta.env.DEV && typeof window !== 'undefined' && (
+        <ReactQueryDevtools initialIsOpen={false} />
+      )}
+    </QueryClientProvider>
   );
 }
 

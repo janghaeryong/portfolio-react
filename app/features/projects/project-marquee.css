@@ -1,0 +1,51 @@
+/* src/features/projects/project-marquee.css */
+
+/* 뷰포트: 오버플로우 가리기 + 호버 시 일시정지 */
+.project-marquee .marquee-viewport {
+  overflow: hidden;
+  width: 100%;
+  user-select: none;
+  -webkit-user-drag: none;
+  cursor: default;
+  /* 모바일에서도 부드럽게 */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 트랙: 가로 행을 무한 이동 */
+.project-marquee .marquee-track {
+  display: flex;
+  gap: var(--marquee-gap, 16px);
+  align-items: center;
+  padding: 8px 0;
+  will-change: transform;
+  animation: marquee-scroll var(--marquee-duration, 25000ms) linear infinite;
+  animation-direction: var(--marquee-direction, normal);
+}
+
+/* 그룹 전체에 마우스를 올리면 애니메이션 정지 */
+.project-marquee:hover .marquee-track,
+.project-marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+
+/* 아이템(카드 li) */
+.project-marquee .marquee-item {
+  flex: 0 0 auto;
+}
+
+/* 스크롤 키프레임: 0% -> -50% (동일 리스트 두 번 이어붙였으니 절반만 이동해도 무한루프) */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - var(--marquee-gap, 16px) / 2));
+  }
+}
+
+/* 반응형 살짝 보정 (카드 폭 줄이기) */
+@media (max-width: 640px) {
+  .project-marquee .marquee-item figure {
+    width: 280px; /* w-[360px] -> 모바일 축소 */
+  }
+}

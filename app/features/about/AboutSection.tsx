@@ -93,7 +93,9 @@ export default function AboutSection() {
               </a>
               <div className="flex items-center gap-3 text-white/90">
                 <Phone className="shrink-0" />
-                <span>010-8767-7124</span>
+                <a href="tel:01087677124" className="hover:underline">
+                  010-8767-7124
+                </a>
               </div>
               <a
                 href="https://github.com/janghaeryong"

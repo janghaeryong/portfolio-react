@@ -40,16 +40,10 @@ export default function Header() {
               Skills
             </a>
             <a
-              href="#project"
+              href="#projects"
               className="hover:text-blue-500 transition-colors"
             >
               Projects
-            </a>
-            <a
-              href="#archiving"
-              className="hover:text-blue-500 transition-colors"
-            >
-              Archiving
             </a>
           </div>
 
@@ -100,39 +94,22 @@ export default function Header() {
             className="hover:text-blue-500 transition-colors"
             onClick={handleNavClick}
           >
-            소개
+            About
           </a>
           <a
             href="#skills"
             className="hover:text-blue-500 transition-colors"
             onClick={handleNavClick}
           >
-            기술
+            Skills
           </a>
           <a
             href="#project"
             className="hover:text-blue-500 transition-colors"
             onClick={handleNavClick}
           >
-            프로젝트
+            Projects
           </a>
-          <a
-            href="#contact"
-            className="hover:text-blue-500 transition-colors"
-            onClick={handleNavClick}
-          >
-            연락처
-          </a>
-
-          {/* <button
-            type="button"
-            className="mt-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700 focus:outline-none focus:ring focus:ring-blue-500"
-            onClick={() => setDark((v) => !v)}
-          >
-            <span className="text-gray-700 dark:text-yellow-400">
-              {dark ? '다크 끄기' : '다크 켜기'}
-            </span>
-          </button> */}
         </nav>
       </aside>
     </>

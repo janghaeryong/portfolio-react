@@ -3,12 +3,15 @@ import {
   AboutSection,
   SkillsSection,
   ProjectsSection,
-} from '~/features';
+} from '@features/index';
 
 export function meta() {
   return [
-    { title: 'Home | RuntimeBoom' },
-    { name: 'description', content: '포트폴리오 홈' },
+    { title: "장해룡 포트폴리오 :: JHR's Portfolio" },
+    {
+      name: 'description',
+      content: '더 나은 구조를 고민하는 모바일 개발자 장해룡의 포트폴리오',
+    },
   ];
 }
 

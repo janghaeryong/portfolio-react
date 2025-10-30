@@ -16,7 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["./app/*"],
-      "@/*": ["app/*"]
+      "@/*": ["./app/*"],
+      "@core/*": ["./app/core/*"],
+      "@features/*": ["./app/features/*"]
     },
     "esModuleInterop": true,
     "verbatimModuleSyntax": true,
