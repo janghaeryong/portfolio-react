@@ -9,6 +9,7 @@ export default function AboutSection() {
         bg-gradient-to-b from-[#0b1020] via-[#0c1222] to-[#0e1626]
         text-white
         flex items-center
+        scroll-mt-15 md:scroll-mt-20
       "
     >
       {/* 아주 미세한 도트 그리드 패턴 */}

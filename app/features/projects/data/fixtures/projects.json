@@ -1,16 +1,13 @@
 [
   {
     "id": "p-001",
-    "project_title": "콩알일기",
+    "project_title": "레이스",
     "project_description": "걸음 수 기록과 일상 아카이빙",
-    "project_contributionRole": "Android 클린아키 리팩터링 / 지도",
-    "project_s_date": "2024-03-01",
+    "project_contributionRole": "Android / iOS 개발",
+    "project_s_date": "2025-11-01",
     "project_e_date": null,
     "project_skills": ["Kotlin", "Compose", "Hilt", "Room"],
-    "project_images": [
-      "/images/projects/kongal-1.png",
-      "/images/projects/kongal-2.png"
-    ]
+    "project_images": ["/images/race/race_1.png", "/images/race/race_1.png"]
   },
   {
     "id": "p-002",
@@ -20,6 +17,16 @@
     "project_s_date": "2025-10-01",
     "project_e_date": "2025-10-29",
     "project_skills": ["React", "TypeScript", "Vite", "Tailwind"],
-    "project_images": []
+    "project_images": ["/images/race/race_1.png", "/images/race/race_1.png"]
+  },
+  {
+    "id": "p-003",
+    "project_title": "RuntimeBoom 포트폴리오",
+    "project_description": "원페이지, Tailwind, 파일 기반 라우팅",
+    "project_contributionRole": "React 구조/디자인 시스템 정리",
+    "project_s_date": "2025-10-01",
+    "project_e_date": "2025-10-29",
+    "project_skills": ["React", "TypeScript", "Vite", "Tailwind"],
+    "project_images": ["/images/race/race_1.png", "/images/race/race_1.png"]
   }
 ]

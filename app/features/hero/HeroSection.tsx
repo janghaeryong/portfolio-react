@@ -2,7 +2,10 @@ import React from 'react';
 
 const HeroSection: React.FC = () => {
   return (
-    <section id="hero" className="relative w-full min-h-screen overflow-hidden">
+    <section
+      id="hero"
+      className="relative w-full min-h-screen overflow-hidden scroll-mt-15 md:scroll-mt-20"
+    >
       {/* 다크 그라데이션 배경 - AboutSection과 자연스럽게 연결 */}
       <div className="absolute inset-0 bg-linear-to-b from-slate-950 via-slate-900 to-[#0b1020]" />
 
