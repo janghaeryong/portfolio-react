@@ -1,32 +1,276 @@
 [
   {
     "id": "p-001",
-    "project_title": "레이스",
-    "project_description": "걸음 수 기록과 일상 아카이빙",
-    "project_contributionRole": "Android / iOS 개발",
-    "project_s_date": "2025-11-01",
+    "project_title": "랭킹닭컴",
+    "project_description": "건강식 전문 쇼핑몰 앱으로, 사용자 식단 관리와 맞춤 상품 추천을 제공합니다. 앱 구조를 개선하고 마케팅 자동화(Braze)와 사용자 행동 분석(Amplitude)을 강화해 서비스 효율성을 높였습니다.",
+    "project_contributionRole": [
+      "Android / iOS 유지보수 및 리팩토링",
+      "데이터 및 이벤트 추적 개선",
+      "지속 가능한 코드 아키텍처 정비"
+    ],
+    "project_team": {
+      "total": 2,
+      "roles": {
+        "mobile": 1,
+        "server": 1
+      }
+    },
+    "project_s_date": "2023-07-10",
     "project_e_date": null,
-    "project_skills": ["Kotlin", "Compose", "Hilt", "Room"],
-    "project_images": ["/images/race/race_1.png", "/images/race/race_1.png"]
+    "project_year": [2025, 2024, 2023],
+    "project_type": "Hybrid-Native",
+    "project_categories": ["Mobile"],
+    "project_skills": [
+      "Kotlin",
+      "Compose",
+      "Hilt",
+      "Room",
+      "Swift",
+      "SwiftUI",
+      "Braze",
+      "Amplitue"
+    ],
+    "project_images": ["/images/race/race_1.png", "/images/race/race_2.png"]
   },
   {
     "id": "p-002",
-    "project_title": "RuntimeBoom 포트폴리오",
-    "project_description": "원페이지, Tailwind, 파일 기반 라우팅",
-    "project_contributionRole": "React 구조/디자인 시스템 정리",
+    "project_title": "메이드림",
+    "project_description": "",
+    "project_contributionRole": ["Android, Ios 개발 및 유지보수"],
+    "project_team": {
+      "total": 2,
+      "roles": {
+        "mobile": 1,
+        "server": 1
+      }
+    },
     "project_s_date": "2025-10-01",
-    "project_e_date": "2025-10-29",
-    "project_skills": ["React", "TypeScript", "Vite", "Tailwind"],
-    "project_images": ["/images/race/race_1.png", "/images/race/race_1.png"]
+    "project_e_date": "2025-10-31",
+    "project_year": [2025],
+    "project_type": "Native",
+    "project_categories": ["Mobile"],
+    "project_skills": ["Flutter"],
+    "project_images": ["/images/race/race_1.png", "/images/race/race_2.png"]
   },
   {
     "id": "p-003",
-    "project_title": "RuntimeBoom 포트폴리오",
-    "project_description": "원페이지, Tailwind, 파일 기반 라우팅",
-    "project_contributionRole": "React 구조/디자인 시스템 정리",
-    "project_s_date": "2025-10-01",
-    "project_e_date": "2025-10-29",
-    "project_skills": ["React", "TypeScript", "Vite", "Tailwind"],
-    "project_images": ["/images/race/race_1.png", "/images/race/race_1.png"]
+    "project_title": "피키다이어트",
+    "project_description": "",
+    "project_contributionRole": ["Android / iOS 개발 및 유지보수"],
+    "project_team": {
+      "total": 2,
+      "roles": {
+        "mobile": 1,
+        "server": 1
+      }
+    },
+    "project_s_date": "2023-07-10",
+    "project_e_date": null,
+    "project_year": [2025, 2024, 2023],
+    "project_type": "Hybrid",
+    "project_categories": ["Mobile"],
+    "project_skills": ["Kotlin", "Compose", "Hilt", "Room"],
+    "project_images": ["/images/race/race_1.png", "/images/race/race_2.png"]
+  },
+  {
+    "id": "p-004",
+    "project_title": "리빙에이드",
+    "project_description": "",
+    "project_contributionRole": ["Android / iOS 개발 및 유지보수"],
+    "project_team": {
+      "total": 2,
+      "roles": {
+        "mobile": 1,
+        "server": 1
+      }
+    },
+    "project_s_date": "2023-07-10",
+    "project_e_date": "2025-10-31",
+    "project_year": [2025, 2024, 2023],
+    "project_type": "Hybrid",
+    "project_categories": ["Mobile"],
+    "project_skills": [""],
+    "project_images": ["/images/race/race_1.png", "/images/race/race_2.png"]
+  },
+  {
+    "id": "p-005",
+    "project_title": "개근질마트",
+    "project_description": "",
+    "project_contributionRole": ["Android / iOS 개발 및 유지보수"],
+    "project_team": {
+      "total": 2,
+      "roles": {
+        "mobile": 1,
+        "server": 1
+      }
+    },
+    "project_s_date": "2023-07-10",
+    "project_e_date": null,
+    "project_year": [2025, 2024, 2023],
+    "project_type": "Hybrid",
+    "project_categories": ["Mobile"],
+    "project_skills": [""],
+    "project_images": ["/images/race/race_1.png", "/images/race/race_2.png"]
+  },
+  {
+    "id": "p-006",
+    "project_title": "내일식사",
+    "project_description": "",
+    "project_contributionRole": ["Android / iOS 개발 및 유지보수"],
+    "project_team": {
+      "total": 2,
+      "roles": {
+        "mobile": 1,
+        "server": 1
+      }
+    },
+    "project_s_date": "2023-07-10",
+    "project_e_date": "2025-10-31",
+    "project_year": [2025, 2024, 2023],
+    "project_type": "Hybrid",
+    "project_categories": ["Mobile"],
+    "project_skills": [""],
+    "project_images": ["/images/race/race_1.png", "/images/race/race_2.png"]
+  },
+  {
+    "id": "p-007",
+    "project_title": "내일식사",
+    "project_description": "",
+    "project_contributionRole": ["Android / iOS 개발 및 유지보수"],
+    "project_team": {
+      "total": 2,
+      "roles": {
+        "mobile": 1,
+        "server": 1
+      }
+    },
+    "project_s_date": "2023-07-10",
+    "project_e_date": "2025-10-31",
+    "project_year": [2025, 2024, 2023],
+    "project_type": "Hybrid",
+    "project_categories": ["Mobile"],
+    "project_skills": [""],
+    "project_images": ["/images/race/race_1.png", "/images/race/race_2.png"]
+  },
+  {
+    "id": "p-008",
+    "project_title": "레이스",
+    "project_description": "",
+    "project_contributionRole": ["Android / iOS 개발 및 유지보수"],
+    "project_team": {
+      "total": 2,
+      "roles": {
+        "mobile": 1,
+        "server": 1
+      }
+    },
+    "project_s_date": "2024-10-01",
+    "project_e_date": "2025-02-28",
+    "project_year": [2025, 2024],
+    "project_type": "Native",
+    "project_categories": ["Mobile"],
+    "project_skills": [" Native"],
+    "project_images": ["/images/race/race_1.png", "/images/race/race_2.png"]
+  },
+
+  {
+    "id": "p-009",
+    "project_title": "삼양",
+    "project_description": "",
+    "project_contributionRole": ["Android / iOS 개발 및 유지보수"],
+    "project_team": {
+      "total": 2,
+      "roles": {
+        "mobile": 1,
+        "server": 1
+      }
+    },
+    "project_s_date": "2024-09-01",
+    "project_e_date": "2024-12-30",
+    "project_year": [2023],
+    "project_type": "Hybrid",
+    "project_categories": ["Mobile"],
+    "project_skills": ["React", "React Native"],
+    "project_images": ["/images/race/race_1.png", "/images/race/race_2.png"]
+  },
+  {
+    "id": "p-010",
+    "project_title": "마이쉽단",
+    "project_description": "",
+    "project_contributionRole": ["Android / iOS 유지보수"],
+    "project_team": {
+      "total": 2,
+      "roles": {
+        "mobile": 1,
+        "server": 1
+      }
+    },
+    "project_s_date": "2024-08-01",
+    "project_e_date": "2024-10-31",
+    "project_year": [2024],
+    "project_type": "Hybrid",
+    "project_categories": ["Mobile"],
+    "project_skills": ["React Native"],
+    "project_images": ["/images/race/race_1.png", "/images/race/race_2.png"]
+  },
+  {
+    "id": "p-011",
+    "project_title": "피트니스",
+    "project_description": "",
+    "project_contributionRole": ["Android / iOS 개발 및 유지보수"],
+    "project_team": {
+      "total": 2,
+      "roles": {
+        "mobile": 1,
+        "server": 1
+      }
+    },
+    "project_s_date": "2024-01-01",
+    "project_e_date": "2024-01-30",
+    "project_year": [2024],
+    "project_type": "Hybrid",
+    "project_categories": ["Mobile"],
+    "project_skills": ["Flutter"],
+    "project_images": ["/images/race/race_1.png", "/images/race/race_2.png"]
+  },
+  {
+    "id": "p-012",
+    "project_title": "만보기",
+    "project_description": "",
+    "project_contributionRole": ["Android / iOS 개발 및 유지보수"],
+    "project_team": {
+      "total": 2,
+      "roles": {
+        "mobile": 1,
+        "server": 1
+      }
+    },
+    "project_s_date": "2023-08-01",
+    "project_e_date": "2023-12-31",
+    "project_year": [2023],
+    "project_type": "Native",
+    "project_categories": ["Mobile"],
+    "project_skills": [""],
+    "project_images": ["/images/race/race_1.png", "/images/race/race_2.png"]
+  },
+  {
+    "id": "p-013",
+    "project_title": "TMS(배송관리시스템)",
+    "project_description": "",
+    "project_contributionRole": ["Android / iOS 개발 및 유지보수"],
+    "project_team": {
+      "total": 2,
+      "roles": {
+        "mobile": 1,
+        "server": 1
+      }
+    },
+    "project_s_date": "2023-05-01",
+    "project_e_date": "2023-07-31",
+    "project_year": [2023],
+    "project_type": "Native",
+    "project_categories": ["Mobile"],
+    "project_skills": [""],
+    "project_images": ["/images/race/race_1.png", "/images/race/race_2.png"]
   }
 ]

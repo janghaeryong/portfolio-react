@@ -4,7 +4,7 @@ export const ProjectRow = z.object({
   id: z.string(),
   project_title: z.string(),
   project_description: z.string(),
-  project_contributionRole: z.string(),
+  project_contributionRole: z.array(z.string()),
   project_s_date: z.string(), // yyyy-MM-dd
   project_e_date: z.string().nullable(), // null or yyyy-MM-dd
   project_skills: z.array(z.string()),
