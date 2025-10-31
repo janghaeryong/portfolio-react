@@ -44,9 +44,8 @@ export default function AboutSection() {
             ABOUT ME
           </h1>
         </div> */}
-        <h2 className="text-4xl font-extrabold text-white relative inline-block mb-10">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-12">
           ABOUT ME
-          <span className="absolute bottom-[-6px] left-0 w-2/3 h-[3px] bg-blue-500 rounded"></span>
         </h2>
 
         {/* 프로필 섹션 */}

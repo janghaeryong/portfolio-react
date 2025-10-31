@@ -9,7 +9,7 @@ export interface ProjectEntity {
   id: ProjectId;
   title: string;
   description: string;
-  contributionRole: string; // 나의 역할
+  contributionRole: string[]; // 나의 역할
   period: ProjectPeriod;
   skills: string[];
   images: string[]; // URL 목록

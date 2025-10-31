@@ -7,14 +7,11 @@ const FAMILIAR: Skill[] = [
   { name: 'Android', note: 'Jetpack Compose · Hilt · Room · DataStore' },
   { name: 'iOS', note: 'SwiftUI · Combine' },
   { name: 'Flutter', note: 'Riverpod' },
-  { name: 'React', note: 'TypeScript · Tailwind · Vite' },
 ];
 
 const TRIED: Skill[] = [
-  { name: 'Spring Boot', note: 'REST API · JPA(기초)' },
-  { name: 'Firebase / Firestore' },
-  { name: 'MySQL' },
-  { name: 'Docker' },
+  { name: 'React', note: 'TypeScript · Tailwind · Vite' },
+  { name: 'Spring Boot', note: 'REST API · JPA' },
 ];
 
 const LANGUAGES: Skill[] = [
@@ -35,16 +32,14 @@ export default function SkillsSection() {
   return (
     <section
       id="skills"
-      // ❌ scroll-mt-15 -> ✅ scroll-mt-16 (헤더 높이가 64px 근처라 가정)
-      // 색을 확실히 지정해 부모 상속 이슈 방지
-      className="py-16 sm:py-24 scroll-mt-16 md:scroll-mt-20 text-neutral-900"
+      className="relative py-16 sm:py-24 scroll-mt-16 md:scroll-mt-20 bg-white text-neutral-900"
     >
+      {/* 상단 구분선 */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
       <div className="container mx-auto max-w-6xl px-4">
-        <header className="mb-10">
-          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
-            SKILLS
-          </h2>
-        </header>
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-12">
+          SKILLS
+        </h2>
 
         {/* 3열 그리드: Familiar / Tried / Language */}
         <div className="grid gap-6 lg:grid-cols-3">
