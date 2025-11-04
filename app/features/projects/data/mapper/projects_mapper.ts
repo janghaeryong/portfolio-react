@@ -12,6 +12,7 @@ export function toDomain(row: ProjectRowT): ProjectEntity {
       startDate: row.project_s_date,
       endDate: row.project_e_date ?? undefined,
     },
+    year: row.project_year,
     skills: row.project_skills,
     images: row.project_images,
   };

@@ -43,12 +43,17 @@ export default function Modal({ open, onClose, title, children }: ModalProps) {
       onMouseDown={onBackdropMouseDown}
       className="fixed inset-0 z-50 flex items-center justify-center"
     >
-      <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
+      <div
+        className="absolute inset-0 bg-black/60"
+        aria-hidden="true"
+        onClick={onClose}
+      />
       <div
         role="dialog"
         aria-modal="true"
         aria-label={title}
         className="relative z-10 w-[min(1100px,92vw)] max-h-[88vh] overflow-auto rounded-2xl bg-white p-6 shadow-xl"
+        onClick={(e) => e.stopPropagation()}
       >
         <button
           aria-label="close"
