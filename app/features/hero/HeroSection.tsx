@@ -49,9 +49,14 @@ const HeroSection: React.FC = () => {
             </div>
 
             {/* 서브 텍스트 */}
-            <p className="text-lg sm:text-xl md:text-2xl text-white/70 max-w-3xl pt-4 md:pt-6 leading-relaxed">
-              Clean Architecture로 더 나은 구조를 설계하는 개발자입니다.
-            </p>
+            <div className="text-lg sm:text-xl md:text-2xl text-white/70 max-w-3xl pt-4 md:pt-6 leading-relaxed space-y-2">
+              <p>더 나은 구조를 고민하는 개발자.</p>
+              <p className="text-base sm:text-lg md:text-xl italic text-white/50">
+                Even if you go slow,
+                <br />
+                you'll get there if you don't stop.
+              </p>
+            </div>
           </div>
 
           {/* CTA 영역 */}

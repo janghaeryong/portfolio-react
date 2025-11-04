@@ -11,6 +11,7 @@ export interface ProjectEntity {
   description: string;
   contributionRole: string[]; // 나의 역할
   period: ProjectPeriod;
+  year: number[]; // 프로젝트 진행 연도
   skills: string[];
   images: string[]; // URL 목록
 }
